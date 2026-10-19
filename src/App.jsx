@@ -86,7 +86,11 @@ export default function App() {
         </section>
 
         <section id="place" className="place section">
-          <div className="section-inner">
+          <div className="venue-photo" aria-hidden="true" />
+          <div className="venue-veil" aria-hidden="true" />
+          <Botanical side="tl" small />
+          <Botanical side="br" small />
+          <div className="section-inner venue-content">
             <MapPin className="gold icon" />
             <p className="eyebrow">ŠVENTĖS VIETA</p>
             <h2>Vila Santa Barbara</h2>
