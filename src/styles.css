@@ -27,3 +27,23 @@ footer small{font-size:17px}
   .place .address{font-size:21px}
   .btn,.outline-btn{font-size:16px}
 }
+
+/* Didesnis tekstas +1 žingsnis */
+.lead{font-size:30px;line-height:1.65}
+.program-item h3{font-size:32px}
+.program-item p,.info p{font-size:26px;line-height:1.68}
+.info h3{font-size:51px}
+.place .address{font-size:29px}
+.count{font-size:19px}
+.btn,.outline-btn{font-size:19px}
+nav button,.text-link{font-size:17px}
+footer small{font-size:19px}
+@media(max-width:760px){
+  .lead{font-size:25px}
+  .program-item h3{font-size:28px}
+  .program-item p,.info p{font-size:22px;line-height:1.65}
+  .info h3{font-size:46px}
+  .place .address{font-size:25px}
+  .count{font-size:17px}
+  .btn,.outline-btn{font-size:18px}
+}
