@@ -47,3 +47,20 @@ footer small{font-size:19px}
   .count{font-size:17px}
   .btn,.outline-btn{font-size:18px}
 }
+
+/* LT / PL language selector */
+.top-actions{display:flex;align-items:center;gap:18px}.language-switch{display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid rgba(54,81,70,.18);border-radius:999px;background:rgba(255,255,255,.38)}.language-switch button{border:0;background:none;color:var(--soft);cursor:pointer;font:600 13px Arial,sans-serif;padding:2px 4px}.language-switch button.active{color:var(--ink)}.language-switch span{color:rgba(54,81,70,.35)}
+@media(max-width:760px){.top-actions{gap:9px}.language-switch{gap:3px;padding:5px 7px}.language-switch button{font-size:12px}.text-link{font-size:14px}}
+
+/* Mobile readability balance */
+@media(max-width:760px){
+  .lead{font-size:22px;line-height:1.58}
+  .program-item h3{font-size:25px}
+  .program-item p,.info p{font-size:19px;line-height:1.58}
+  .info h3{font-size:42px}
+  .place .address{font-size:22px}
+  .count{font-size:15px}
+  .btn,.outline-btn{font-size:16px}
+  nav button,.text-link{font-size:14px}
+  footer small{font-size:16px}
+}
