@@ -51,10 +51,10 @@ const copy = {
     more: "WIĘCEJ",
     dayTitle: "Dzień uroczystości",
     program: [
-      {time:"15:00", title:"Przybycie gości", text:"Spotykamy się i rozpoczynamy świętowanie"},
+      {time:"15:00", title:"Rozpoczęcie przyjęcia i powitanie gości", text:""},
       {time:"16:00", title:"Ceremonia ślubna", text:"Ceremonia odbędzie się w miejscu uroczystości"}
     ],
-    after: "Po ceremonii zapraszamy do wspólnego świętowania – rozmów, śmiechu, tańca i radowania się pięknymi chwilami razem.",
+    after: "Po ceremonii zapraszamy na wspólne świętowanie – pełne rozmów, śmiechu, tańca i pięknych chwil razem.",
     venueLabel: "MIEJSCE UROCZYSTOŚCI",
     venue: "Vila Santa Barbara",
     address: "Graužė, 33354 rejon Molėtai",
