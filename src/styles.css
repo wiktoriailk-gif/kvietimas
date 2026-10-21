@@ -31,3 +31,22 @@ h2{font-size:clamp(56px,7.4vw,82px);line-height:1;margin:0}.program-section{min-
 /* Ryškesnė pilna data virš „Šventės diena“ */
 .program-date{font-size:18px!important;font-weight:600!important;letter-spacing:.22em!important;color:#a97848!important}
 @media(max-width:760px){.program-date{font-size:16px!important;letter-spacing:.16em!important}}
+
+/* 2027-05-29: programos data dar ryškesnė */
+.program-date{
+  display:inline-block;
+  margin:18px 0 24px !important;
+  font-family:'Cormorant Garamond',Georgia,serif !important;
+  font-size:26px !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  letter-spacing:.16em !important;
+  color:#9b6537 !important;
+}
+@media(max-width:760px){
+  .program-date{
+    margin:14px 0 20px !important;
+    font-size:21px !important;
+    letter-spacing:.10em !important;
+  }
+}
