@@ -13,7 +13,7 @@ const copy = {
     nav: [["home","Kvietimas"],["program","Programa"],["place","Vieta"],["info","Svarbi informacija"]],
     wedding: "MŪSŲ VESTUVĖS",
     intro: "Su dideliu džiaugsmu kviečiame Jus būti kartu mūsų ypatingą dieną ir pasidalinti akimirkomis, kurias norėsime prisiminti dar ilgai.",
-    confirm: "Patvirtinti dalyvavimą", until: "Iki šventės liko", days: "d.", more: "DAUGIAU", dayTitle: "Šventės diena",
+    confirm: "Patvirtinti dalyvavimą", until: "Iki šventės liko", days: "d.", more: "DAUGIAU", dayTitle: "Šventės diena", programDate: "2027 · GEGUŽĖS 29",
     program: [
       {time:"15:00", title:"Laukiame atvykstant svečių", text:"Renkamės ir pradedame šventę", note:"Jei planuojate nakvoti, galėsite iš karto įsikurti, pasirinkti savo vietą ir palikti daiktus. Šventės vietoje Jūsų lauks šampanas ir užkandžiai, kad laukiant ceremonijos laikas neprailgtų."},
       {time:"16:00", title:"Santuokos ceremonija", text:"Ceremonija vyks šventės vietoje"}
@@ -22,7 +22,7 @@ const copy = {
     venueLabel:"ŠVENTĖS VIETA", venue:"Vila Santa Barbara", address:"Graužė, 33354 Molėtų rajonas", maps:"Atidaryti „Google Maps“ žemėlapį",
     infoTitle:"Svarbi informacija",
     info:[
-      {title:"Apie vaikus",text:"Suteikime tėveliams galimybę vakaru pasimėgauti be rūpesčių – šventę rengiame tik suaugusiems."},
+      {title:"Apie vaikus",text:"Suteikime tėveliams galimybę pasimėgauti vakaru be rūpesčių – šventę rengiame tik suaugusiems."},
       {title:"Gėlės ir dovanos",text:"Jūsų buvimas mums – pati gražiausia dovana. Jei norėsite pradžiuginti mus gėle, tegu tai būna viena, išsirinkta iš širdies. O vietoje didelės dovanos mums mieliausia būtų maža, simbolinė staigmena."},
       {title:"Nakvynė",text:"Kad po šventės nereikėtų skubėti namo, pasirūpinsime nakvyne. Pranešdami apie savo atvykimą, parašykite, ar planuojate pasilikti nakvynei."}
     ],
@@ -32,7 +32,7 @@ const copy = {
     htmlLang:"pl", names:<>Dominik <span>i</span> Wiktoria</>, namesPlain:"Dominik i Wiktoria",
     nav:[["home","Zaproszenie"],["program","Program"],["place","Miejsce"],["info","Ważne informacje"]], wedding:"NASZ ŚLUB",
     intro:"Z wielką radością zapraszamy Was, abyście byli z nami w tym wyjątkowym dniu i dzielili chwile, które na długo pozostaną w naszej pamięci.",
-    confirm:"Potwierdź obecność", until:"Do uroczystości pozostało", days:"dni", more:"WIĘCEJ", dayTitle:"Dzień uroczystości",
+    confirm:"Potwierdź obecność", until:"Do uroczystości pozostało", days:"dni", more:"WIĘCEJ", dayTitle:"Dzień uroczystości", programDate:"29 MAJA · 2027",
     program:[
       {time:"15:00",title:"Rozpoczęcie przyjęcia i powitanie gości",text:"",note:"Jeśli planujecie nocleg, będziecie mogli od razu się zakwaterować, wybrać swoje miejsce i zostawić rzeczy. Na miejscu będą na Was czekać szampan i przekąski, aby czas oczekiwania na ceremonię upłynął przyjemnie."},
       {time:"16:00",title:"Ceremonia ślubna",text:"Ceremonia odbędzie się w miejscu uroczystości"}
@@ -58,7 +58,7 @@ export default function App(){
       {['a','b','c','d','e'].map(x=><img key={x} className={`floral floral-${x}`} src="/floral-corner.png" alt="" aria-hidden="true"/>)}
       <section id="home" className="flow-section hero"><div className="section-inner hero-inner"><Flower2 className="gold icon"/><p className="eyebrow">{t.wedding}</p><h1>{t.names}</h1><p className="date">2027 · 05 · 29</p><Ornament/><p className="lead">{t.intro}</p><div className="actions"><button className="btn" onClick={()=>openExternal(RSVP_URL)}><Send/>{t.confirm}</button><div className="count"><CalendarDays/>{t.until} {days} {t.days}</div></div></div><button className="more" onClick={()=>scrollTo("program")}>{t.more}<ChevronDown/></button></section>
       <div className="flow-line" aria-hidden="true"/>
-      <section id="program" className="flow-section program-section"><div className="section-inner"><p className="eyebrow">2027 · 05 · 29</p><h2>{t.dayTitle}</h2><Ornament/><div className="program">{t.program.map(p=><Program key={p.time} {...p}/>)}</div><p className="lead after">{t.after}</p></div></section>
+      <section id="program" className="flow-section program-section"><div className="section-inner"><p className="eyebrow program-date">{t.programDate}</p><h2>{t.dayTitle}</h2><Ornament/><div className="program">{t.program.map(p=><Program key={p.time} {...p}/>)}</div><p className="lead after">{t.after}</p></div></section>
       <section id="place" className="flow-section place"><div className="venue-photo"/><div className="venue-veil"/><div className="section-inner venue-content"><MapPin className="gold icon"/><p className="eyebrow">{t.venueLabel}</p><h2>{t.venue}</h2><p className="address">{t.address}</p><button className="outline-btn" onClick={()=>openExternal(MAPS_URL)}><MapPin/>{t.maps}<ExternalLink/></button></div></section>
       <section id="info" className="flow-section info-section"><div className="section-inner narrow"><h2>{t.infoTitle}</h2><Ornament/><Info icon={UsersRound} {...t.info[0]}/><Info icon={Gift} {...t.info[1]}/><Info icon={BedDouble} {...t.info[2]}/></div></section>
       <section id="rsvp" className="flow-section rsvp"><div className="section-inner narrow"><Heart className="rust icon"/><h2>{t.rsvpTitle}</h2><p className="lead">{t.rsvpText}</p><button className="btn" onClick={()=>openExternal(RSVP_URL)}><Send/>{t.confirm}<ExternalLink/></button></div></section>
