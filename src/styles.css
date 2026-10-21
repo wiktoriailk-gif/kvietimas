@@ -10,88 +10,24 @@ h2{font-size:clamp(56px,7.4vw,82px);line-height:1;margin:0}.program-section{min-
 @media(max-width:760px){nav{display:none}.topbar{padding:11px 18px}.flow-section{padding:90px 20px}.hero{min-height:920px;padding-top:115px}.hero h1 span{display:block;padding:7px}.lead{font-size:19px}.count{font-size:14px}.program-section{min-height:780px}.program{grid-template-columns:1fr;gap:16px}.program-item:first-child:after{right:auto;left:20%;bottom:-8px;top:auto;width:60%;height:1px}.place{min-height:650px}.venue-photo{background-size:auto 100%;background-position:center}.venue-content{padding:30px 14px}.venue-content:before{inset:-22px -15px}.place h2{font-size:62px}.place .address{font-size:19px}.info-section{min-height:1000px}.info{grid-template-columns:1fr;text-align:center}.info>span{margin:auto}.btn,.outline-btn{max-width:100%;justify-content:center}.floral{width:220px}.floral-a{left:-78px;top:75px}.floral-b{right:-80px;top:860px}.floral-c{left:-90px;top:1650px}.floral-d{right:-90px;top:2600px}.floral-e{left:-80px;bottom:120px}.rsvp{min-height:620px;padding-bottom:160px}}
 
 /* Readability adjustment: larger body copy without changing layout */
-.lead{font-size:24px;line-height:1.62}
-.program-item h3{font-size:26px}
-.program-item p,.info p{font-size:20px;line-height:1.65}
-.info h3{font-size:43px}
-.place .address{font-size:24px}
-.count{font-size:17px}
-.btn,.outline-btn{font-size:17px}
-nav button,.text-link{font-size:15px}
-footer small{font-size:17px}
-@media(max-width:760px){
-  .lead{font-size:21px}
-  .program-item h3{font-size:24px}
-  .program-item p,.info p{font-size:18px}
-  .info h3{font-size:40px}
-  .place .address{font-size:21px}
-  .btn,.outline-btn{font-size:16px}
-}
+.lead{font-size:24px;line-height:1.62}.program-item h3{font-size:26px}.program-item p,.info p{font-size:20px;line-height:1.65}.info h3{font-size:43px}.place .address{font-size:24px}.count{font-size:17px}.btn,.outline-btn{font-size:17px}nav button,.text-link{font-size:15px}footer small{font-size:17px}
+@media(max-width:760px){.lead{font-size:21px}.program-item h3{font-size:24px}.program-item p,.info p{font-size:18px}.info h3{font-size:40px}.place .address{font-size:21px}.btn,.outline-btn{font-size:16px}}
 
 /* Didesnis tekstas +1 žingsnis */
-.lead{font-size:30px;line-height:1.65}
-.program-item h3{font-size:32px}
-.program-item p,.info p{font-size:26px;line-height:1.68}
-.info h3{font-size:51px}
-.place .address{font-size:29px}
-.count{font-size:19px}
-.btn,.outline-btn{font-size:19px}
-nav button,.text-link{font-size:17px}
-footer small{font-size:19px}
-@media(max-width:760px){
-  .lead{font-size:25px}
-  .program-item h3{font-size:28px}
-  .program-item p,.info p{font-size:22px;line-height:1.65}
-  .info h3{font-size:46px}
-  .place .address{font-size:25px}
-  .count{font-size:17px}
-  .btn,.outline-btn{font-size:18px}
-}
+.lead{font-size:30px;line-height:1.65}.program-item h3{font-size:32px}.program-item p,.info p{font-size:26px;line-height:1.68}.info h3{font-size:51px}.place .address{font-size:29px}.count{font-size:19px}.btn,.outline-btn{font-size:19px}nav button,.text-link{font-size:17px}footer small{font-size:19px}
+@media(max-width:760px){.lead{font-size:25px}.program-item h3{font-size:28px}.program-item p,.info p{font-size:22px;line-height:1.65}.info h3{font-size:46px}.place .address{font-size:25px}.count{font-size:17px}.btn,.outline-btn{font-size:18px}}
 
 /* LT / PL language selector */
 .top-actions{display:flex;align-items:center;gap:18px}.language-switch{display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid rgba(54,81,70,.18);border-radius:999px;background:rgba(255,255,255,.38)}.language-switch button{border:0;background:none;color:var(--soft);cursor:pointer;font:600 13px Arial,sans-serif;padding:2px 4px}.language-switch button.active{color:var(--ink)}.language-switch span{color:rgba(54,81,70,.35)}
 @media(max-width:760px){.top-actions{gap:9px}.language-switch{gap:3px;padding:5px 7px}.language-switch button{font-size:12px}.text-link{font-size:14px}}
 
 /* Mobile readability balance */
-@media(max-width:760px){
-  .lead{font-size:22px;line-height:1.58}
-  .program-item h3{font-size:25px}
-  .program-item p,.info p{font-size:19px;line-height:1.58}
-  .info h3{font-size:42px}
-  .place .address{font-size:22px}
-  .count{font-size:15px}
-  .btn,.outline-btn{font-size:16px}
-  nav button,.text-link{font-size:14px}
-  footer small{font-size:16px}
-}
+@media(max-width:760px){.lead{font-size:22px;line-height:1.58}.program-item h3{font-size:25px}.program-item p,.info p{font-size:19px;line-height:1.58}.info h3{font-size:42px}.place .address{font-size:22px}.count{font-size:15px}.btn,.outline-btn{font-size:16px}nav button,.text-link{font-size:14px}footer small{font-size:16px}}
+
 /* 15:00 papildoma informacija */
-.program-note {
-  margin: 14px auto 0;
-  max-width: 410px;
-  font-size: 18px !important;
-  line-height: 1.5 !important;
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(54, 81, 70, 0.72) !important;
-}
-@media (max-width: 760px) {
-  .program-note {
-    max-width: 330px;
-    font-size: 16px !important;
-    line-height: 1.5 !important;
-    margin-top: 12px;
-  }
-}
+.program-note{margin:14px auto 0;max-width:410px;font-size:18px!important;line-height:1.5!important;font-style:italic;font-weight:400;color:rgba(54,81,70,.72)!important}
+@media(max-width:760px){.program-note{max-width:330px;font-size:16px!important;line-height:1.5!important;margin-top:12px}}
+
 /* Ryškesnė pilna data virš „Šventės diena“ */
-.program-date {
-  font-size: 17px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.24em !important;
-  color: #a97848 !important;
-}
-@media (max-width: 760px) {
-  .program-date {
-    font-size: 15px !important;
-    letter-spacing: 0.18em !important;
-  }
-}
+.program-date{font-size:18px!important;font-weight:600!important;letter-spacing:.22em!important;color:#a97848!important}
+@media(max-width:760px){.program-date{font-size:16px!important;letter-spacing:.16em!important}}
