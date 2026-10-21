@@ -64,3 +64,21 @@ footer small{font-size:19px}
   nav button,.text-link{font-size:14px}
   footer small{font-size:16px}
 }
+/* 15:00 papildoma informacija */
+.program-note {
+  margin: 14px auto 0;
+  max-width: 410px;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(54, 81, 70, 0.72) !important;
+}
+@media (max-width: 760px) {
+  .program-note {
+    max-width: 330px;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-top: 12px;
+  }
+}
